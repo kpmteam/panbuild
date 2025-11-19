@@ -7,7 +7,7 @@ INPUT="$1"
 FILE_NAME="${INPUT%.*}"
 STYLE=zenburn
 PDF_ENGINE=xelatex
-LATEX_TEMPLATE="$PANBUILD_PATH/prof-default-md.tex"
+LATEX_TEMPLATE="$PANBUILD_PATH/default-md.tex"
 LATEX_DEPENDENCIES="$PANBUILD_PATH/pandoc-md-dependencies.tex"
 
 pandoc -H "$LATEX_DEPENDENCIES" "$PANBUILD_PATH/prof-metadata.yaml" \
